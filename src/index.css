@@ -1,0 +1,645 @@
+body {
+  margin: 0;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: aliceblue;
+  background-color: #091c2a;
+  overflow-x: hidden;
+
+}
+/* Apply background color to all components */
+.main {
+  background-color: #091c2a;
+}
+
+/* take me to the skills section css */
+ .main2
+ {
+  width: 100%;
+  height: auto;
+  background-color: #091c2a;
+  color: aliceblue;
+ }
+ @media screen and (max-width: 768px) {
+ .main2
+ {
+  display: flex;
+  flex-wrap: wrap;
+ }
+  /* Add more styles for responsiveness as needed */
+}
+ 
+ .img1
+ {
+  height: 500px;
+  display: flex;
+  filter: drop-shadow(20px 20px 80px);
+ }
+ .col
+ {
+  justify-content: center;
+  align-items: center;
+ }
+ .icon a
+ {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 50px;
+  background: transparent;
+  border: 2px solid #0ef;
+  background-color: #0ef;
+  text-decoration: none;
+  margin: 10px 10px 20px 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;  
+ }
+
+ .icon1:hover {
+  transform: scale(1.2); /* Increase size on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add box shadow on hover */
+}
+
+.About h1{
+  text-align: center;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.skill h1{
+  text-align: center;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.skill
+{
+  text-align: center;
+}
+
+@keyframes growProgressBar {
+  0%, 33% { --pgPercentage: 0; }
+  100% { --pgPercentage: var(--value); }
+}
+
+@property --pgPercentage {
+  syntax: '<number>';
+  inherits: false;
+  initial-value: 0;
+}
+
+div[role="progressbar"] {
+  --size: 5rem;
+  --fg: #0ef;
+  --bg: #def;
+  --pgPercentage: var(--value);
+  animation: growProgressBar 3s 1 forwards;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: 
+    radial-gradient(closest-side, #091c2a 80%, transparent 0 99.9%, white 0),
+    conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0)
+    ;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: calc(var(--size) / 5);
+  color: var(--fg);
+  justify-self: right;
+}
+
+div[role="progressbar"]::before {
+  counter-reset: percentage var(--value);
+  content: counter(percentage) '%';
+}
+.html h3
+{
+  text-align: left;
+  
+}
+.html
+{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  justify-content: left;
+  
+}
+.css
+{
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin-top: 30px;
+  justify-content: left;
+
+}
+.js
+{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-top: -80px;
+  justify-content: right;
+
+}
+.php
+{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-top: -80px;
+  justify-content: right;
+
+}
+.java
+{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-top: 30px;
+  justify-content: left;
+
+}
+.react
+{
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin-top: 30px;
+  justify-content: center;
+
+}
+.bootstrap
+{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-top: 30px;
+  justify-content: center;
+
+}
+.spring
+{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
+  justify-content: center;
+
+}
+
+#experience h1
+{
+  text-align: center;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+}
+
+
+#services h1{
+  text-align: center;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.services .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr )); /* Adjust the min and max width as needed */
+  gap: 50px;
+  justify-content: center; /* Align items to the center horizontally */
+  align-items: center;
+}
+
+.services .service-item {
+  padding: 50px 30px;
+  transition: all ease-in-out 0.4s;
+  /* background: var(--color-secondary); */
+  height: 300px;
+  width: 350px;
+  overflow: hidden;
+  z-index: 1;
+  border: 2px solid rgb(219, 179, 179);
+  position: relative; /* Add position relative for the pseudo element */
+}
+
+.services .service-item:before {
+  content: "";
+  position: absolute;
+  background: transparent;
+  top: -200px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: all 0.3s;
+  z-index: -1;
+}
+
+.services .service-item h4 {
+  font-weight: 600;
+  margin: 15px 0 0 0;
+  transition: 0.8s ease;
+  font-size: 20px;
+}
+
+.services .service-item h4 a {
+  color: #fff;
+}
+
+.services .service-item p {
+  line-height: 24px;
+  font-size: 14px;
+  margin: 15px 0 0 0;
+}
+
+.services .service-item:hover:before {
+  background: #0ef;
+  top: 0;
+}
+
+.services .service-item:hover h4,
+.services .service-item:hover p {
+  color: black;
+}
+
+.contact h1{
+  text-align: center;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.contact-item
+{
+  display: flex;
+ justify-content: center;
+  align-items: center;
+}
+#item .col
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+.content-item1 box-icon {
+  font-size: 20px; /* Adjust the size as needed */
+}
+.icon2
+{
+  display: flex;
+  justify-content: center;
+  margin-top: 300px;
+}
+
+#b1
+{
+  margin-left: 85%;
+  position:fixed;
+margin-top: -10%;
+background-color: #0ef;
+}
+
+.contact .p{
+  width: 70%;
+  margin-bottom: 70px;
+  margin-top: 50px;
+}
+
+
+
+
+/*home*/
+#d1
+{
+  
+  text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+  .h1 {
+    font-size: 28px; /* Decrease font size for smaller screens */
+  }
+  
+  .p1 {
+    font-size: 16px; /* Decrease font size for smaller screens */
+  }
+  
+  .img1 {
+    height: 300px; /* Adjust image height for smaller screens */
+  }
+  
+  .icon {
+    flex-direction: row; /* Change icon direction to row for smaller screens */
+    justify-content: center; /* Center icons horizontally for smaller screens */
+    margin-top: 20px; /* Add some top margin for smaller screens */
+  }
+  
+  .icon1 {
+    margin: 0 10px; /* Adjust margin between icons for smaller screens */
+  }
+  
+  #b1 {
+    margin-left: 0; /* Remove left margin for the back-to-top button for smaller screens */
+    margin-top: 20px; /* Add some top margin for smaller screens */
+  }
+}
+
+
+@media (max-width: 768px) {
+  .About {
+    padding: 30px 0;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  #aimg {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+  }
+
+  .btn {
+    margin-top: 20px;
+  }
+}
+
+
+
+#project {
+  padding: 50px 0;
+}
+
+#project h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.gasimg5 {
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  .gasimg5 {
+    max-width: 100%;
+    float: left;
+    margin-right: 20px;
+  }
+
+  .gasimg5:last-child {
+    margin-right: 0;
+  }
+
+  #project .row {
+    display: flex;
+    align-items: center;
+  }
+
+  .description-col {
+    clear: both; /* Add this to move the description to the next line */
+  }
+}
+
+
+.col2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.techimg {
+  width: 100%;
+  max-width: 100%; /* Ensure the image does not exceed its container width */
+}
+
+@media (max-width: 768px) {
+  .col2 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+
+
+
+.col-centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.footer 
+{
+  text-align: center;
+}
+
+/* Hide the checkbox */
+#toggle-menu {
+  display: none;
+}
+
+/* Basic styles for navigation */
+.container1 {
+  display: flex;
+  justify-content: right;
+  align-items: flex-end;
+  padding: 20px;
+}
+.container1 h1 {
+  margin-right: 250px;
+}
+.container1 a {
+  text-decoration: none;
+  color: white;
+  margin-right: 20px;
+  padding: 8px 12px; /* Add padding to the navigation links */
+  transition: background-color 0.3s, color 0.3s; /* Add transition for smooth color and background-color change */
+}
+
+.container1 a:hover {
+  color: black;
+  background-color: #0ef; /* Add background color on hover */
+}
+
+/* Hide the checkbox */
+#toggle-menu {
+  display: none;
+}
+
+/* Style for the toggle button label */
+.menu-btn {
+  cursor: pointer;
+  font-size: 24px;
+  color: white;
+  display: none; /* Hide toggle button by default */
+}
+
+/* Show toggle button only on smaller screens */
+@media screen and (max-width: 768px) {
+  .menu-btn {
+      display: block;
+  }
+
+  /* Hide the navigation links by default on smaller screens */
+  .container1 a {
+      display: none;
+      margin: 10px 0;
+ /* Adjust margin for better spacing */
+  }
+
+  /* Show the navigation links when the toggle button is checked */
+  #toggle-menu:checked ~ a {
+      display: block;
+  }
+
+  /* Additional adjustments for better display on mobile */
+  .container1 {
+      flex-direction: column; /* Display items vertically */
+      align-items: flex-start; /* Align items to the start of the container */
+  }
+
+  /* Adjust padding for the container */
+  .container1 {
+      padding: 10px; /* Reduce padding for smaller screens */
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+/* Styling for the footer section */
+/* Centering content within the footer */
+.footer {
+  text-align: center; /* Center align the text */
+}
+
+/* Styling for the horizontal line */
+.footer hr {
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+  margin: 20px auto; /* Center the horizontal line */
+  width: 80%; /* Set a specific width */
+}
+
+/* Styling for the copyright text */
+.footer p {
+  font-size: 14px;
+  color: white;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .footer hr {
+    width: 100%; /* Adjust width for smaller screens */
+  }
+}
+
+/* Custom styles for the Services component */
+.services .container {
+  text-align: center; /* Center align the text */
+}
+
+.services .services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center items horizontally */
+}
+
+.services .service-item {
+  width: 30%; /* Set width for each service item */
+  margin: 50px; /* Add margin between items */
+  padding: 20px; /* Add padding to each item */
+  border: 1px solid #ccc; /* Add border for visualization */
+}
+
+@media (max-width: 768px) {
+  .services .service-item {
+    width: 90%; 
+    height: 100%;/* Adjust width for smaller screens */
+  }
+}
+
+
+
+/* Base styles */
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: aliceblue;
+  background-color: #091c2a;
+  margin: 0;
+  padding: 0;
+}
+
+/* Make images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Container styles */
+.container {
+  max-width: 1200px; /* Adjust max-width as needed */
+  margin: 0 auto; /* Center container horizontally */
+  padding: 20px;
+}
+
+/* Header styles */
+header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Navigation styles */
+nav {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+/* Main content styles */
+.main-content {
+  padding: 20px;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  background-color: #091c2a;
+  color: white;
+  padding: 20px 0;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  /* Adjust other styles for smaller screens */
+}
