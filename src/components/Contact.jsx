@@ -2,6 +2,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import { AiFillGithub, AiFillInstagram, AiFillLinkedin, AiOutlineWhatsApp } from 'react-icons/ai';
 
 export default function Contact() {
   useEffect(() => {
@@ -47,14 +48,21 @@ export default function Contact() {
           </Row>
           <Row className="icon-row">
             <Col xs={12} className="text-center">
-              <div className="icon2" style={{ marginTop: '0px' }}>
-                <div className="icon" >
-                  <a className="icon1" target='_blank' href="https://linkedin.com/in/hrushikesh2202" data-aos="fade-right"><box-icon name='linkedin' type='logo'   ></box-icon></a>
-                  <a className="icon1" target='_blank' href="https://wa.me/917249224098" data-aos="fade-right"><box-icon name='whatsapp' type='logo'></box-icon></a>
-                  <a className="icon1" target='_blank' href="https://instagram.com/rushi_wadekar_03" data-aos="fade-left"><box-icon name='instagram' type='logo'></box-icon></a>
-                  <a className="icon1" target='_blank' href="https://github.com/hrushikeshwadekar" data-aos="fade-left"><box-icon name='github' type='logo'></box-icon></a>
-                </div>
+            <div className="icon">
+                <a className="icon1" rel="noreferrer" target='_blank' href="https://linkedin.com/in/hrushikesh2202" data-aos="fade-right">
+                <AiFillLinkedin/>  
+                  </a>
+                <a className="icon1" rel="noreferrer" target='_blank' href="https://wa.me/917249224098"  data-aos="fade-right">
+                <AiOutlineWhatsApp/>  
+                  </a>
+                <a className="icon1" rel="noreferrer" target='_blank' href="https://instagram.com/rushi_wadekar_03" data-aos="fade-left">
+                <AiFillInstagram/>  
+                  </a>
+                <a className="icon1" rel="noreferrer" target='_blank' href="https://github.com/hrushikeshwadekar" data-aos="fade-left">
+                <AiFillGithub/>  
+                  </a>
               </div>
+
             </Col>
           </Row>
         </Container>

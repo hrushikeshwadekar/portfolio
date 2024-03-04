@@ -5,7 +5,6 @@ import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'aos/dist/aos.css'
 import './App.css';
-import "boxicons"
 
 
 import reportWebVitals from './reportWebVitals';

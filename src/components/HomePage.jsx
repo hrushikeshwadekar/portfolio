@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { Button, Col, Container, Row, Image } from 'react-bootstrap'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import { AiFillLinkedin, AiFillInstagram, AiFillGithub, AiOutlineWhatsApp, AiOutlineUp } from "react-icons/ai"
 
 export default function HomePage() {
   useEffect(() => {
@@ -28,10 +29,18 @@ export default function HomePage() {
               <br />
               <br />
               <div className="icon">
-                <a className="icon1" target='_blank' href="https://linkedin.com/in/hrushikesh2202" data-aos="fade-right"><box-icon name='linkedin' type='logo'   ></box-icon></a>
-                <a className="icon1" target='_blank' href="https://wa.me/917249224098"  data-aos="fade-right"><box-icon name='whatsapp' type='logo'  ></box-icon></a>
-                <a className="icon1" target='_blank' href="https://instagram.com/rushi_wadekar_03" data-aos="fade-left"><box-icon name='instagram' type='logo'  ></box-icon></a>
-                <a className="icon1" target='_blank' href="https://github.com/hrushikeshwadekar" data-aos="fade-left"><box-icon name='github' type='logo'   ></box-icon></a>
+                <a className="icon1" rel="noreferrer" target='_blank' href="https://linkedin.com/in/hrushikesh2202" data-aos="fade-right">
+                  <AiFillLinkedin />
+                </a>
+                <a className="icon1" rel="noreferrer" target='_blank' href="https://wa.me/917249224098" data-aos="fade-right">
+                  <AiOutlineWhatsApp />
+                </a>
+                <a className="icon1" rel="noreferrer" target='_blank' href="https://instagram.com/rushi_wadekar_03" data-aos="fade-left">
+                  <AiFillInstagram />
+                </a>
+                <a className="icon1" rel="noreferrer" target='_blank' href="https://github.com/hrushikeshwadekar" data-aos="fade-left">
+                  <AiFillGithub />
+                </a>
               </div>
 
 
@@ -40,7 +49,9 @@ export default function HomePage() {
               <Image src={"/me.png"} alt="My Image" className='img1' />
             </Col>
           </Row>
-          <a href="#main2"><Button variant="outline-info" id='b1'><box-icon name='up-arrow-alt'></box-icon></Button>{' '}</a>
+          <a href="#main2"><AiOutlineUp variant="outline-info" id='b1'>
+          </AiOutlineUp>
+            {' '}</a>
         </Container>
 
       </section>

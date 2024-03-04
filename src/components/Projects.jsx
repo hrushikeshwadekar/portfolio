@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import { Col, Container, Row, Image } from 'react-bootstrap';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import image from "../assets/gas.png"
 
 export default function Projects() {
   useEffect(() => {
