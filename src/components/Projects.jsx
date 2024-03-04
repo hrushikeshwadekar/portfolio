@@ -17,7 +17,7 @@ export default function Projects() {
           <br />
           <Row>
             <Col sm={12} md={6}>
-              <Image src={"/portfolio/gas.png"} alt='' className='gasimg5' data-aos='zoom-in-down' />
+              <Image src={"/gas.png"} alt='' className='gasimg5' data-aos='zoom-in-down' />
             </Col>
             <Col sm={12} md={6} className='description-col' data-aos='zoom-in-left'>
               <h3>Online Gas Booking System</h3>

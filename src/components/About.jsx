@@ -17,7 +17,7 @@ export default function About() {
           <h1 data-aos='flip-left' style={{ textAlign: 'center', marginBottom: '30px' }}>About Me</h1>
           <Row>
             <Col lg={6} xs={12} style={{ marginBottom: '20px' }}>
-              <Image src={"/portfolio/me.png"} alt='My ' data-aos='zoom-out-up' style={{ width: '100%', height: 'auto' }} />
+              <Image src={"/me.png"} alt='My ' data-aos='zoom-out-up' style={{ width: '100%', height: 'auto' }} />
             </Col>
             <Col lg={6} xs={12} data-aos='zoom-out-down'>
               <p style={{ maxWidth: '600px' }}>

@@ -16,7 +16,7 @@ export default function Experience() {
         <h1 data-aos="flip-left">Experience</h1>
         <Row className='row'>
           <Col md={6} className='col2' data-aos="zoom-out-right">
-            <img src={"/portfolio/TECHVIEW.png"} alt="" className='techimg' />
+            <img src={"/TECHVIEW.png"} alt="" className='techimg' />
           </Col>
           <Col md={6} className='col2' data-aos="zoom-out-down">
             <p>

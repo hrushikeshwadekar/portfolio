@@ -37,7 +37,7 @@ export default function HomePage() {
 
             </Col>
             <Col className='col' data-aos="zoom-out">
-              <Image src={"/portfolio/me.png"} alt="My Image" className='img1' />
+              <Image src={"/me.png"} alt="My Image" className='img1' />
             </Col>
           </Row>
           <a href="#main2"><Button variant="outline-info" id='b1'><box-icon name='up-arrow-alt'></box-icon></Button>{' '}</a>
